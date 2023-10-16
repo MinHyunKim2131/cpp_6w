@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// Employee 클래스
 class Employee {
 
 public:
@@ -36,6 +37,7 @@ public:
     }
 };
 
+// Manger 클래스는 Employee 를 상속받는다.
 class Manager : public Employee {
 
 public:
@@ -59,6 +61,8 @@ public:
 };
 
 int main() {
+
+    // 객체 생성
     Manager manager("EMP001", "Manager 이름", 35, "seoul", 5000.00, 10);
     manager.print();
     return 0;

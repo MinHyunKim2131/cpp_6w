@@ -6,13 +6,14 @@ public:
     int userValue;
     userClass() : userValue(5) {}
 
+    // postfix unary
     userClass operator++(int) {
         userClass temp = *this;
         userValue++;
         return temp;
     }
 
-
+    // prefix unary
     userClass& operator++() {
         userValue++;
         return *this;
@@ -25,11 +26,11 @@ public:
 
 int main() {
     userClass a;
-    std::cout << "초기값: " << a.getValue() << std::endl;  // 5
+    std::cout << "초기값: " << a.getValue() << std::endl;
 
     a++;
-    std::cout << "결과: " << a.getValue() << std::endl;  // 6
+    std::cout << "결과: " << a.getValue() << std::endl;
 
     ++a;
-    std::cout << "결과: " << a.getValue() << std::endl;  // 7
+    std::cout << "결과: " << a.getValue() << std::endl;
 }

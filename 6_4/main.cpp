@@ -37,7 +37,7 @@ public:
 };
 
 int main() {
-
+    // 학생 객체 생성
     Student student("김민현", 10, "daejeon", "202103904");
 
     std::cout << "Student Information" << std::endl;

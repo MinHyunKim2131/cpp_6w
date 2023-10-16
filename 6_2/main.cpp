@@ -10,6 +10,7 @@ public:
 
 int main() {
     try {
+        // 예외 발생
         throw NewException();
     } catch (NewException& e) {
         std::cout << "My exception is " << e.what() << std::endl;
